@@ -4,6 +4,9 @@ A desktop app for EVE Online to calculate and plan production chains.
 
 ## Changelog
 
+### v2.0.1
+- Fix Windows installer packaging
+
 ### v2.0.0
 - Full rewrite as a native desktop app (Tauri v2 + Rust + Vue 3) — ~38 MB vs ~390 MB previously
 
@@ -23,7 +26,7 @@ Pick the file for your platform from the **Assets** section of this release:
 | Platform | File |
 |----------|------|
 | Windows (x64) | `Windows Installer (x64)` |
-| macOS (x64) | `macOS (x64)` |
+| macOS | `macOS (universal)` |
 | Linux (x64) | `Linux AppImage (x64)` or `Linux .deb (x64)` |
 
 ## Installation
@@ -34,7 +37,7 @@ Pick the file for your platform from the **Assets** section of this release:
 3. Launch **EveBL** from the Start Menu or desktop shortcut
 
 ### macOS
-1. Download the `macOS (x64)` `.dmg`
+1. Download the `macOS (universal)` `.dmg`
 2. Open the DMG and drag **EveBL** into Applications
 3. Launch from Launchpad or Spotlight
 
