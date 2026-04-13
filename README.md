@@ -4,6 +4,9 @@ A desktop app for EVE Online to calculate and plan production chains.
 
 ## Changelog
 
+### v2.0.0
+- Full rewrite as a native desktop app (Tauri v2 + Rust + Vue 3) — ~38 MB vs ~390 MB previously
+
 ### v1.2.4
 - Fix missing Material Icons in packaged builds — icons were rendering as text instead of glyphs
 
@@ -11,46 +14,47 @@ A desktop app for EVE Online to calculate and plan production chains.
 - Releases are now built via GitHub Actions on native runners — fixes macOS app bundle symlinks that were broken in previous Windows-built archives
 
 ### v1.2.2
-- **Ore source** — moon materials, basic minerals, and ice products now show the ores or ice types they are sourced from, displayed below the item name in the production list.
-
+- **Ore source** — moon materials, basic minerals, and ice products now show the ores or ice types they are sourced from, displayed below the item name in the production list
 
 ## Download
 
-Pick the archive for your platform from the **Assets** section of this release:
+Pick the file for your platform from the **Assets** section of this release:
 
 | Platform | File |
 |----------|------|
-| Windows (x64) | `EveBL-win32-x64.zip` |
-| macOS (x64) | `EveBL-darwin-x64.tar.gz` |
-| Linux (x64) | `EveBL-linux-x64.zip` |
+| Windows (x64) | `Windows Installer (x64)` |
+| macOS (x64) | `macOS (x64)` |
+| Linux (x64) | `Linux AppImage (x64)` or `Linux .deb (x64)` |
 
 ## Installation
 
 ### Windows
-1. Download `EveBL-win32-x64.zip`
-2. Extract the archive anywhere you like
-3. Run `EveBL.exe`
-
-No installer needed — the folder is self-contained and can be moved freely.
+1. Download the `Windows Installer (x64)` `.exe`
+2. Run it and follow the installer wizard
+3. Launch **EveBL** from the Start Menu or desktop shortcut
 
 ### macOS
-1. Download `EveBL-darwin-x64.tar.gz`
-2. Extract: `tar -xzf EveBL-darwin-x64.tar.gz`
-3. Open `EveBL-darwin-x64/EveBL.app`
+1. Download the `macOS (x64)` `.dmg`
+2. Open the DMG and drag **EveBL** into Applications
+3. Launch from Launchpad or Spotlight
 
-> **First launch:** macOS may block an unnotarised app. Right-click `EveBL.app` → **Open** → **Open** to bypass Gatekeeper.
+> **First launch:** macOS may block an unsigned app. Right-click **EveBL** → **Open** → **Open** to bypass Gatekeeper.
 
 ### Linux
-1. Download `EveBL-linux-x64.zip`
-2. Extract the archive
-3. Make the binary executable: `chmod +x EveBL-linux-x64/EveBL`
-4. Run `EveBL-linux-x64/EveBL`
+**AppImage** (no install required):
+1. Download the `Linux AppImage (x64)` `.AppImage`
+2. Make it executable: `chmod +x EveBL_*.AppImage`
+3. Run it: `./EveBL_*.AppImage`
+
+**Debian/Ubuntu package:**
+1. Download the `Linux .deb (x64)` `.deb`
+2. Install: `sudo dpkg -i eve-bl_*.deb`
 
 ## Data
 
 EveBL ships with pre-processed EVE SDE data. No account or API key is required for basic use.
 
-Optional: log in with your EVE SSO account to load your characters' owned blueprint data.
+Optional: log in with your EVE SSO account to load your character's owned blueprint data and asset quantities.
 
 ## Settings persistence
 
