@@ -4,6 +4,9 @@ A desktop app for EVE Online to calculate and plan production chains.
 
 ## Changelog
 
+### v1.2.4
+- Fix missing Material Icons in packaged builds — icons were rendering as text instead of glyphs
+
 ### v1.2.3
 - Releases are now built via GitHub Actions on native runners — fixes macOS app bundle symlinks that were broken in previous Windows-built archives
 
