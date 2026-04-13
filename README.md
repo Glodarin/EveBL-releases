@@ -4,6 +4,9 @@ A desktop app for EVE Online to calculate and plan production chains.
 
 ## Changelog
 
+### v1.2.3
+- Releases are now built via GitHub Actions on native runners — fixes macOS app bundle symlinks that were broken in previous Windows-built archives
+
 ### v1.2.2
 - **Ore source** — moon materials, basic minerals, and ice products now show the ores or ice types they are sourced from, displayed below the item name in the production list.
 
