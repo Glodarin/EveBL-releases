@@ -4,6 +4,10 @@ A desktop app for EVE Online to calculate and plan production chains.
 
 ## Changelog
 
+### v2.1.0
+- **Production chain** — the manufacturing chain is now available directly in the Production card as a tab alongside the production list; nodes can be checked off as done without switching views
+- **Ore variants** — moon ore and ice material lists no longer show quality variants (e.g. "Shining Monazite") — only the base type is listed
+
 ### v2.0.1
 - Fix Windows installer packaging
 
