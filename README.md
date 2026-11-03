@@ -4,6 +4,13 @@ A desktop app for EVE Online to calculate and plan production chains.
 
 ## Changelog
 
+### v2.2.1
+- **Material efficiency** — ME now applies to the whole job, as in EVE, instead of being rounded up for every run. Jobs with many runs need fewer materials than before (e.g. 15 per run at ME 10 over 100 runs: 1,350 instead of 1,400)
+- **Header ME** — your Material Efficiency setting is no longer reset to 10 by Calculate, and blueprints without ESI data now start at that value
+- **Pinned items** — open reliably even if an item is renamed in a game update, and blueprints saved at ME 0 show ME 0
+- **Mining** — the reprocessed output no longer comes out one unit short in some cases (e.g. 905 instead of 906), and the page stays fast as your history grows
+- Under the hood: updated libraries and a reworked codebase
+
 ### v2.2.0
 - **Multiple characters** — log in as many characters as you like and switch between them in the top-right menu, or pick **All characters** to combine their blueprints and assets (a BPO owned by anyone counts, BPC runs and asset quantities add up, the best ME wins). Your existing login is kept
 - **Mining ledger** — new Mining page with your personal mining history: totals, breakdown by ore, system, character or day, any date range, and an estimate of the reprocessed minerals at your yield. EveBL keeps the history beyond the 30 days ESI provides
