@@ -4,6 +4,17 @@ A desktop app for EVE Online to calculate and plan production chains.
 
 ## Changelog
 
+### v2.2.0
+- **Multiple characters** — log in as many characters as you like and switch between them in the top-right menu, or pick **All characters** to combine their blueprints and assets (a BPO owned by anyone counts, BPC runs and asset quantities add up, the best ME wins). Your existing login is kept
+- **Mining ledger** — new Mining page with your personal mining history: totals, breakdown by ore, system, character or day, any date range, and an estimate of the reprocessed minerals at your yield. EveBL keeps the history beyond the 30 days ESI provides
+- **Blueprint ME** — blueprints you haven't edited now follow the selected character's ME when you switch characters
+- **ESI errors** — characters whose data could not be loaded are now named in a notice with a Retry button, instead of silently showing incomplete data
+- **Automatic updates** — EveBL checks for new versions on start and can install them for you (Update, Later or Skip)
+- **macOS & Linux** — settings, logins and pinned items are now saved in the standard app data folder (`~/Library/Application Support/EveBL`, `~/.local/share/EveBL`); before, they could be lost between starts
+- **SDE data** — updated to the latest EVE Static Data Export
+
+> **Log in again:** characters logged in before v2.2.0 need to log in once more to grant the new mining ledger and industry jobs permissions. The Mining page shows a button for this.
+
 ### v2.1.1
 - **Chain view** — fixed hover highlighting: components shared by several items (e.g. reaction materials) now correctly light up under every item that uses them, not just one
 - **SDE data** — updated to the latest EVE Static Data Export
@@ -36,6 +47,8 @@ Pick the file for your platform from the **Assets** section of this release:
 | Windows (x64) | `Windows Installer (x64)` |
 | macOS | `macOS (universal)` |
 | Linux (x64) | `Linux AppImage (x64)` or `Linux .deb (x64)` |
+
+The `.sig`, `.app.tar.gz` and `latest.json` files are used by EveBL's built-in updater — you don't need to download them. From v2.2.0 on, EveBL offers new versions itself when it starts.
 
 ## Installation
 
