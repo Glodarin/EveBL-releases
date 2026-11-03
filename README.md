@@ -4,6 +4,11 @@ A desktop app for EVE Online to calculate and plan production chains.
 
 ## Changelog
 
+### v2.2.2
+- **Automatic updates** — fixed: the update dialog offered new versions but could not install them
+
+> **Install this version by hand:** v2.2.0 and v2.2.1 show the update dialog but cannot install the update. Download v2.2.2 below (or use **Release page** in the dialog) and install it once; from then on EveBL updates itself.
+
 ### v2.2.1
 - **Material efficiency** — ME now applies to the whole job, as in EVE, instead of being rounded up for every run. Jobs with many runs need fewer materials than before (e.g. 15 per run at ME 10 over 100 runs: 1,350 instead of 1,400)
 - **Header ME** — your Material Efficiency setting is no longer reset to 10 by Calculate, and blueprints without ESI data now start at that value
